@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var n = Number(prompt("Enter the number:"));
+            var num = n;
+            var sum = 0;
+            var rem;
+
+            while (num > 0) {
+                rem = num % 10;
+                sum = sum + rem * rem * rem;
+                num = Math.floor(num / 10);
+            }
+
+            if (n === sum) {
+                console.log("Armstrong number");
+            } else {
+                console.log("Not an Armstrong number");
+            }
+    </script>
+</body>
+</html>
